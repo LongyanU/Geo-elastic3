@@ -30,6 +30,7 @@ grid on
 xlabel('travel time(ms)')
 box on
 ylabel('Difference of Txx(Pa)')
+axis([0 4000 -3*10^-3  5*10^-3])
 % axis([0 4000 -6.9*10^-10  9.2*10^-10])
 % figure;plot(a(:,300))
 % hold on;plot(b(:,300),'k')
