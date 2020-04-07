@@ -230,25 +230,30 @@ for it=1:nt-2,
     
     
     Tzz(1:46*2,:)=0;
-    Txz(1:46*2,:)=0;%% ²»ÎÈ¶¨µÄÀ´Ô´
+    Txz(1:46*2,:)=0;%% Â²Â»ÃŽÃˆÂ¶Â¨ÂµÃ„Ã€Â´Ã”Â´
 
     if rem(it,isnap)== 0,
-        imagesc(-Vx(46:end,:),[-10^-1 10^-1]), axis equal
-        hold on; plot(200,100,'r*','linewidth',2)
+        imagesc(-Vx(46*2:end,:),[-10^-1 10^-1]), axis equal
+        hold on; plot(200*2,100*2,'r*','linewidth',2)
         
-        hold on; plot(250,55,'bo','linewidth',2)
-        hold on; plot(300,55,'bo','linewidth',2)
-        hold on; plot(400,55,'bo','linewidth',2)
-        hold on; plot(500,55,'bo','linewidth',2)
-        hold on; plot(600,55,'bo','linewidth',2)
-        hold on; plot(650,55,'bo','linewidth',2)
+        hold on; plot(250*2,55*2,'bo','linewidth',2)
+        hold on; plot(300*2,55*2,'bo','linewidth',2)
+        hold on; plot(400*2,55*2,'bo','linewidth',2)
+        hold on; plot(500*2,55*2,'bo','linewidth',2)
+        hold on; plot(600*2,55*2,'bo','linewidth',2)
+        hold on; plot(650*2,55*2,'bo','linewidth',2)
         
+        hold on; plot(400*2,(150-46)*2,'bo','linewidth',2)
+        hold on; plot(400*2,(200-46)*2,'bo','linewidth',2)
+        hold on; plot(400*2,(250-46)*2,'bo','linewidth',2)
         
-        hold on; plot(400,150-46,'bo','linewidth',2)
-        hold on; plot(400,200-46,'bo','linewidth',2)
-        hold on; plot(400,250-46,'bo','linewidth',2)
+        hold on; plot(700*2,55*2,'bo','linewidth',2)
+        hold on; plot(750*2,55*2,'bo','linewidth',2)
+        hold on; plot(750*2,(150-46)*2,'bo','linewidth',2)
         
-        hold on; plot(750,300-46,'bo','linewidth',2)
+        hold on; plot(750*2,(200-46)*2,'bo','linewidth',2)
+        hold on; plot(750*2,(250-46)*2,'bo','linewidth',2)
+        hold on; plot(750*2,(300-46)*2,'bo','linewidth',2)
         
         colormap gray
         xlabel('x'),ylabel('z')
