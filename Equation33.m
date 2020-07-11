@@ -1,6 +1,5 @@
-%Equation 38's correctness
-%When Vp== 5003, it is stable.
-%When Vp=5005, it is unstable.
+%Equation 45's correctness
+
 clear;
 clc
 close all;
